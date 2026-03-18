@@ -16,7 +16,7 @@ async function bootstrap() {
   server.on('error', (error) => {
     if (error.code === 'EADDRINUSE') {
       console.error(
-        `Port ${port} is already in use. Set a different PORT in apps/draftkit-backend/.env and update frontend NEXT_PUBLIC_DRAFTKIT_API_URL.`
+        `Port ${port} is already in use. Set a different PORT in backend/.env and update frontend NEXT_PUBLIC_DRAFTKIT_API_URL.`
       );
       process.exit(1);
     }
